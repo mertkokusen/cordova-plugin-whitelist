@@ -1,6 +1,6 @@
 {
-  "name": "cordova-plugin-whitelist",
-  "version": "1.3.5-dev",
+  "name": "cordova-plugin-bizimbeyazlar",
+  "version": "1.0.0",
   "description": "Cordova Whitelist Plugin",
   "cordova": {
     "platforms": [
