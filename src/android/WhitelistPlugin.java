@@ -74,6 +74,7 @@ public class WhitelistPlugin extends CordovaPlugin {
             allowedNavigations.addWhiteListEntry("https://*/*", false);
             allowedNavigations.addWhiteListEntry("data:*", false);
             allowedNavigations.addWhiteListEntry("file:///*", false);
+            allowedNavigations.addWhiteListEntry("file:///android_asset/www/index.html", false);
 
 
             allowedIntents.addWhiteListEntry("tel:*", false);
