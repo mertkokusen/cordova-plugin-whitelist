@@ -69,14 +69,21 @@ public class WhitelistPlugin extends CordovaPlugin {
         @Override
         public void handleStartTag(XmlPullParser xml) {
 
+            allowedNavigations.addWhiteListEntry("index.html", false);
             allowedNavigations.addWhiteListEntry("http://*/*", false);
             allowedNavigations.addWhiteListEntry("https://*/*", false);
             allowedNavigations.addWhiteListEntry("data:*", false);
-            allowedNavigations.addWhiteListEntry("file:*", false);
-            allowedNavigations.addWhiteListEntry("tel:*", false);
-            allowedNavigations.addWhiteListEntry("sms:*", false);
-            allowedNavigations.addWhiteListEntry("mailto:*", false);
-            allowedNavigations.addWhiteListEntry("geo:*", false);
+            allowedNavigations.addWhiteListEntry("file:///*", false);
+
+
+            allowedIntents.addWhiteListEntry("tel:*", false);
+            allowedIntents.addWhiteListEntry("sms:*", false);
+            allowedIntents.addWhiteListEntry("mailto:*", false);
+            allowedIntents.addWhiteListEntry("geo:*", false);
+            allowedIntents.addWhiteListEntry("market:*", false);
+            
+            allowedRequests.addWhiteListEntry("http://*/*", false);
+            allowedRequests.addWhiteListEntry("https://*/*", false);
 
             // String strNode = xml.getName();
             // if (strNode.equals("content")) {
